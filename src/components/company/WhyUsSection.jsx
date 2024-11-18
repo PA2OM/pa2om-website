@@ -4,23 +4,22 @@ const WhyUsSection = () => {
   const features = [
     {
       title: "SENIOR PROFESSIONALS",
-      description: "Our clients choose PA2OM because it's the preferred destination for senior-level project leaders who are experienced, knowledgeable, and at the top of their game.",
-      emoji: "👔"
+      description: "Our clients choose PA2OM because it's the preferred destination for senior-level project leaders who are experienced, knowledgeable, and at the top of their game."
     },
     {
       title: "COMPREHENSIVE PROJECT EXPERTISE",
-      description: "Together, PA2OM's independent professionals comprise a team with comprehensive project expertise, from portfolio and PMO development, to program and project management across business strategy transformation.",
-      emoji: "🎯"
+      description: "Together, PA2OM's independent professionals comprise a team with comprehensive project expertise, from portfolio and PMO development, to program and project management across business strategy transformation."
     },
     {
       title: "FLEXIBLE INDEPENDENT WORKFORCE",
-      description: "We understand the value that independent professionals bring to the table, and we're dedicated to ensuring that your organization can seamlessly tap into this growing pool of expertise.",
-      emoji: "🔄"
+      description: "We understand the value that independent professionals bring to the table, and we're dedicated to ensuring that your organization can seamlessly tap into this growing pool of expertise."
     }
   ];
+  
   const handleConsultationClick = () => {
     window.location.hash = 'contact';
   };
+  
   return (
     <section id="our-team" className="bg-gradient-to-b from-c6 to-c3 py-20 bg-gradient-to-b from-c4 to-white py-20">
       <div className="container mx-auto px-4">
@@ -35,7 +34,7 @@ const WhyUsSection = () => {
               PA2OM is a welcome resource alternative to hiring, traditional consulting, and staffing. 
             </p>
             <p className="text-2xl text-c1 mb-4">
-            Our unique "TEAM" provides varied flexible skills and expertise.
+              Our unique "TEAM" provides varied flexible skills and expertise.
             </p>
             <p className="text-c1">
               Many organizations do not have a formal talent strategy that accounts for the growing base
@@ -53,7 +52,6 @@ const WhyUsSection = () => {
               key={index}
               className="bg-c3 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="text-4xl mb-4">{feature.emoji}</div>
               <h3 className="text-2xl text-c1 mb-4">
                 {feature.title}
               </h3>
@@ -82,8 +80,8 @@ const WhyUsSection = () => {
                   that drives real business transformation.
                 </p>
                 <button 
-                onClick={handleConsultationClick}
-                className="bg-c4 text-white px-8 py-3 rounded-lg hover:bg-c2 transition-colors">
+                  onClick={handleConsultationClick}
+                  className="bg-c4 text-white px-8 py-3 rounded-lg hover:bg-c2 transition-colors">
                   Start Your Journey
                 </button>
               </div>

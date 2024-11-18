@@ -58,7 +58,7 @@ const ContactSection = () => {
               {/* Email Button Fixed on Left Side */}
 <a
           href="mailto:inquiry@pa2om.com" 
-          className="right-0 top-1/2 transform -translate-y-1/2 bg-yellow-500 text-white px-4 py-2 rounded-full shadow-lg 
+          className="right-0 top-1/2 transform -translate-y-1/2 bg-yellow-500 text-white px-4 py-4 rounded-full shadow-lg 
                      hover:bg-yellow-600 transition-colors"
         >
           CLICK HERE TO EMAIL US DIRECTLY

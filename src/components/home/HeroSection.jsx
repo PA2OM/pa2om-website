@@ -2,15 +2,21 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-<section id="home" className="py-20 bg-white">
-  {/* Ensure the background is solid */}
+<section 
+  id="home" 
+  className="relative py-20 bg-white"
+  style={{ 
+    background: 'white',
+    backgroundImage: 'none !important'
+  }}
+>
   <div className="container mx-auto px-4 text-center">
     <h1 className="text-c6 text-4xl mb-20">
       Welcome to a new era of business transformation
     </h1>
     
     <div className="mb-20">
-      <img 
+      <img
         src="/PA2OM Logo Full.svg"
         alt="PA2OM Logo"
         className="h-48 mx-auto"

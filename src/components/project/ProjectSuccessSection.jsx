@@ -1,10 +1,8 @@
-import React from 'react';
-
 const ProjectSuccessSection = () => {
   const phases = [
     {
       title: "Purpose & Strategy",
-      badge: "Phase 1",
+      subtitle: "Phase One",
       points: [
         "Clear vision and objectives for the change",
         "Compelling business case that justifies the need",
@@ -13,7 +11,7 @@ const ProjectSuccessSection = () => {
     },
     {
       title: "Leadership & Sponsorship",
-      badge: "Phase 2",
+      subtitle: "Phase Two",
       points: [
         "Active and visible executive sponsorship",
         "Engaged leadership coalition across all levels",
@@ -22,7 +20,7 @@ const ProjectSuccessSection = () => {
     },
     {
       title: "Stakeholder Engagement & Communication",
-      badge: "Phase 3",
+      subtitle: "Phase Three",
       points: [
         "Comprehensive stakeholder analysis and mapping",
         "Two-way communication channels and feedback loops",
@@ -31,7 +29,7 @@ const ProjectSuccessSection = () => {
     },
     {
       title: "Implementation & Sustainability",
-      badge: "Phase 4",
+      subtitle: "Phase Four",
       points: [
         "Detailed implementation roadmap and timeline",
         "Training and support systems for affected employees",
@@ -39,9 +37,11 @@ const ProjectSuccessSection = () => {
       ]
     }
   ];
+
   const handleConsultationClick = () => {
     window.location.hash = 'contact';
   };
+
   return (
     <section id="project-success" className="bg-c3 py-20">
       <div className="container mx-auto px-4">
@@ -59,12 +59,14 @@ const ProjectSuccessSection = () => {
                 key={index} 
                 className="border border-c6 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="flex items-start justify-between mb-4">
-                  <h4 className="text-xl text-c1">
+                <div className="h-24"> {/* Fixed height container for title */}
+                  <h4 className="text-xl text-c1 leading-tight">
                     {phase.title}
                   </h4>
-                  <span className="inline-block bg-c1 text-c3 text-xs px-2 py-1 rounded-full">
-                    {phase.badge}
+                </div>
+                <div className="mb-4">
+                  <span className="text-sm text-c2 italic">
+                    {phase.subtitle}
                   </span>
                 </div>
 
@@ -80,11 +82,11 @@ const ProjectSuccessSection = () => {
             ))}
           </div>
 
-          {/* Optional CTA */}
           <div className="mt-12 text-center">
             <button 
-             onClick={handleConsultationClick}
-            className="bg-c1 text-c3 px-8 py-3 rounded-lg hover:bg-c2 transition-colors">
+              onClick={handleConsultationClick}
+              className="bg-c1 text-c3 px-8 py-3 rounded-lg hover:bg-c2 transition-colors"
+            >
               Start Your Project Success Journey
             </button>
           </div>
