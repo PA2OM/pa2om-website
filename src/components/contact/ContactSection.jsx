@@ -183,7 +183,7 @@ const ContactSection = () => {
               <button
                 type="submit"
                 className="py-10 w-full px-6 py-4 bg-yellow-100/20 backdrop-blur-sm rounded-full 
-                         text-white text-xl border border-white/20 hover:bg-white/30
+                         text-white border border-white/20 hover:bg-white/30
                          focus:outline-none transition-colors flex items-center justify-between"
               >
                 <span>SUBMIT REQUEST</span>
