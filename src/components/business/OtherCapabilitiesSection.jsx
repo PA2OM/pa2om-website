@@ -41,8 +41,8 @@ const OtherCapabilitiesSection = () => {
   ];
 
   const ProjectRecoverySection = () => (
-    <div className="bg-blue-900 text-white rounded-lg p-8 mt-12">
-      <h3 className="text-2xl font-bold mb-4">
+    <div className="bg-c6 text-c3 rounded-lg p-8 mt-12">
+      <h3 className="text-c4 text-2xl mb-4">
         Project Recovery / Expedited Project Delivery
       </h3>
       
@@ -59,19 +59,19 @@ const OtherCapabilitiesSection = () => {
           traditional project management. It's an emergency service to get you back on mission.
         </p>
 
-        <div className="border-t border-blue-700 pt-4">
-          <h4 className="font-semibold mb-3">Let's Talk If:</h4>
+        <div className="border-t border-c3 pt-4">
+          <h4 className="text-c2 font-semibold mb-3">Let's Talk If:</h4>
           <ul className="space-y-2">
             <li className="flex items-start">
-              <span className="text-blue-300 mr-2">•</span>
+              <span className="text-c2 mr-2">•</span>
               <span>You face an unexpected, time-sensitive mandate, widespread requirements or defect concern.</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-300 mr-2">•</span>
+              <span className="text-c2 mr-2">•</span>
               <span>The project faces significant stakeholder resistance, and you need to work outside of internal bureaucracies to get what you need done.</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-300 mr-2">•</span>
+              <span className="text-c2 mr-2">•</span>
               <span>You have lost key resources, or they are simply out of their depth and need creative, tactical ways to increase project speed and efficacy.</span>
             </li>
           </ul>
@@ -81,17 +81,17 @@ const OtherCapabilitiesSection = () => {
   );
 
   return (
-    <section className="bg-white py-20">
+    <section id="other-capabilities" className="bg-c2 py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-blue-900 text-center mb-6">
-          OTHER BUSINESS CAPABILITIES OFFERED
+        <h2 className="text-5xl text-c3 mb-6">
+          Other Business Capabilities Offered
         </h2>
 
-        <div className="max-w-4xl mx-auto mb-16">
-          <p className="text-gray-600 text-center font-semibold mb-4">
+        <div className="">
+          <p className="text-2xl text-c3 mb-4">
             For projects that are too vital to risk on conventional project management players.
           </p>
-          <p className="text-gray-600 text-center">
+          <p className="text-2xl text-c3 mb-8">
             Is a project facing increased market pressure and executive urgency? Is your professional reputation
             tied to a project outcome? Has a project gone off the rails? Have you lost key leaders at the worst
             possible time? Project & Change Delivery offers specialized project managers who have the capability
@@ -103,22 +103,22 @@ const OtherCapabilitiesSection = () => {
           {capabilities.map((capability, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+              className="bg-c6 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
             >
-              <h3 className="text-xl font-bold text-blue-900 mb-4">
+              <h3 className="text-2xl text-c4 mb-4">
                 {capability.title}
               </h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-c3 mb-6">
                 {capability.description}
               </p>
 
               <div className="border-t pt-4">
-                <h4 className="font-semibold text-blue-800 mb-3">Let's Talk If:</h4>
+                <h4 className="font-semibold text-c2 mb-3">Let's Talk If:</h4>
                 <ul className="space-y-2">
                   {capability.talkPoints.map((point, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="text-blue-500 mr-2">•</span>
-                      <span className="text-gray-600 text-sm">{point}</span>
+                      <span className="text-c2 mr-2">•</span>
+                      <span className="text-c3 text-sm">{point}</span>
                     </li>
                   ))}
                 </ul>

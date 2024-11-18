@@ -34,16 +34,18 @@ const DifferenceSection = () => {
       icon: Target
     }
   ];
-
+  const handleConsultationClick = () => {
+    window.location.hash = 'contact';
+  };
   return (
-    <section className="bg-white py-20">
+    <section id="differences" className="bg-c4 py-20">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-5xl md:text-5xl text-c3 mb-6">
             The PA2OM Difference
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-2xl text-c3">
             At PA2OM, we pride ourselves on our diversity of thought and depth of experience from our seasoned
             consultants, each bringing unique expertise and extensive experience across various industries.
           </p>
@@ -54,15 +56,15 @@ const DifferenceSection = () => {
           {differentiators.map((diff, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300"
+              className="bg-c6 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="text-blue-600 mb-4">
+              <div className="text-c4 mb-4">
                 <diff.icon size={48} strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-xl text-c2 mb-4">
                 {diff.title}
               </h3>
-              <p className="text-gray-600">
+              <p className="text-c4">
                 {diff.description}
               </p>
             </div>
@@ -72,11 +74,13 @@ const DifferenceSection = () => {
         {/* CTA Section */}
         <div className="text-center">
           <div className="inline-flex flex-col items-center">
-            <p className="text-gray-600 mb-6 max-w-2xl">
+            <p className="text-c3 mb-6 max-w-2xl">
               Ready to experience the PA2OM difference? Let's discuss how our unique approach
               can transform your operations and drive sustainable growth.
             </p>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+            <button 
+             onClick={handleConsultationClick}
+             className="bg-c2 text-white px-8 py-3 rounded-lg hover:bg-c6 transition-colors duration-300">
               Learn More About Our Approach
             </button>
           </div>

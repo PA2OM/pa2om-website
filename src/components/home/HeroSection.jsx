@@ -2,33 +2,30 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl font-bold mb-20">
-          Welcome to a new era of business transformation
-        </h1>
-        
-        <div className="mb-20">
-          <div className="text-7xl font-bold">
-            <span className="text-[#556B2F]">PA</span>
-            <span className="text-[#FF6B00]">2</span>
-            <span className="text-[#556B2F]">OM</span>
-          </div>
-        </div>
+<section id="home" className="py-20 bg-white">
+  {/* Ensure the background is solid */}
+  <div className="container mx-auto px-4 text-center">
+    <h1 className="text-c6 text-4xl mb-20">
+      Welcome to a new era of business transformation
+    </h1>
+    
+    <div className="mb-20">
+      <img 
+        src="/PA2OM Logo Full.svg"
+        alt="PA2OM Logo"
+        className="h-48 mx-auto"
+      />
+    </div>
+    <div className="max-w-5xl mx-auto">
+      <p className="text-c6 text-xl max-w-3xl mx-auto leading-relaxed">
+        Our Mission is to Transform manufacturing excellence through innovative operational strategies,
+        driving sustainable performance improvements and measurable business outcomes that
+        position our clients as industry leaders.
+      </p>
+    </div>
+  </div>
+</section>
 
-        <div className="text-xl tracking-wide space-x-1">
-          <span className="text-[#556B2F] font-semibold">P</span>
-          <span>ERFORMANCE </span>
-          <span className="text-[#556B2F] font-semibold">A</span>
-          <span>DVANCEMENTS </span>
-          <span className="text-[#FF6B00] font-semibold">THROUGH </span>
-          <span className="text-[#556B2F] font-semibold">O</span>
-          <span>PERATIONAL </span>
-          <span className="text-[#556B2F] font-semibold">M</span>
-          <span>ASTERY</span>
-        </div>
-      </div>
-    </section>
   );
 };
 

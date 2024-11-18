@@ -23,27 +23,29 @@ import Footer from './components/layout/Footer';
 
 const App = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white min-h-screen">
       <Navigation />
-      <HeroSection />
-      <ManufacturingSection />
-      <SuccessSection />
-      <ServicesSection />
-      <CapabilitiesSection />
-      <TransformationSection />
-      <ConsultingSection />
-      <ProjectSuccessSection />
-      <StrategySection />
-      <OtherCapabilitiesSection />
-      <IndustryExperienceSection />
-      <CaseStudiesSection />
-      <PartnershipsSection />
-      <WhyUsSection />
-      <DiversitySection />
-      <FounderSection />
-      <DifferenceSection />
-      <TestimonialsSection />
-      <ContactSection />
+      <main className="pt-[72px]"> {/* Added padding-top to account for fixed nav */}
+        <HeroSection />
+        <ManufacturingSection />
+        <SuccessSection />
+        <ServicesSection />
+        <DifferenceSection />
+        <TransformationSection />
+        <CapabilitiesSection />
+        <ConsultingSection />
+        <StrategySection />
+        <ProjectSuccessSection />
+        <OtherCapabilitiesSection />
+        <CaseStudiesSection />
+        <PartnershipsSection />
+        <WhyUsSection />
+        <IndustryExperienceSection />
+        <FounderSection />
+        <DiversitySection />
+        <TestimonialsSection />
+        <ContactSection />
+      </main>
       <Footer />
     </div>
   );

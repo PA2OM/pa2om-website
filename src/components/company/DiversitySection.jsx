@@ -17,18 +17,18 @@ const DiversitySection = () => {
   ];
 
   return (
-    <section className="relative bg-black text-white overflow-hidden">
+    <section id="diversity" className="relative bg-c12 text-white overflow-hidden">
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content Column */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-                OUR COMMITMENT TO
+              <h2 className="text-5xl md:text-5xl leading-tight">
+                Our Commitment To Both
                 <br />
-                DIVERSITY, EQUALITY &
+                Partnership and Employee
                 <br />
-                INCLUSION
+                "Diversity, Equality & Inclusion"
               </h2>
             </div>
 
@@ -57,30 +57,12 @@ const DiversitySection = () => {
           {/* Right Image Column with Torn Edge Effect */}
           <div className="relative">
             <div className="relative">
-              {/* SVG Torn Edge Overlay */}
-              <div className="absolute inset-0 -left-12">
-                <svg 
-                  viewBox="0 0 100 1000" 
-                  className="h-full" 
-                  preserveAspectRatio="none"
-                >
-                  <path
-                    d="M0,0 C30,120 70,180 100,240 C70,300 30,360 100,420 C30,480 70,540 100,600 C30,660 70,720 100,780 C30,840 70,900 100,960 L100,0 L0,0"
-                    fill="black"
-                  />
-                </svg>
-              </div>
-
               <img
-                src="/api/placeholder/800/600"
+                src="/DEI3.svg"
                 alt="Diverse team collaboration"
-                className="w-full h-full object-cover rounded-r-lg relative z-10"
+                className="w-full h-full"
               />
             </div>
-
-            {/* Decorative Elements */}
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-600 opacity-20 rounded-full"></div>
-            <div className="absolute -top-4 -right-4 w-16 h-16 bg-orange-500 opacity-20 rounded-full"></div>
           </div>
         </div>
 
@@ -89,28 +71,17 @@ const DiversitySection = () => {
           {values.map((value, index) => (
             <div 
               key={index} 
-              className="bg-white/5 p-6 rounded-lg backdrop-blur-sm"
+              className="bg-white/25 p-6 rounded-lg backdrop-blur-lg"
             >
-              <h3 className="text-xl font-bold text-orange-500 mb-3">
+              <h3 className="text-2xl text-c2 mb-3">
                 {value.title}
               </h3>
-              <p className="text-gray-300">
+              <p className="text-c3">
                 {value.description}
               </p>
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Optional: Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-transparent"></div>
-        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
-          <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" strokeWidth="0.5"/>
-          </pattern>
-          <rect width="100" height="100" fill="url(#grid)"/>
-        </svg>
       </div>
     </section>
   );

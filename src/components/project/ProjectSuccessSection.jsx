@@ -39,29 +39,31 @@ const ProjectSuccessSection = () => {
       ]
     }
   ];
-
+  const handleConsultationClick = () => {
+    window.location.hash = 'contact';
+  };
   return (
-    <section className="bg-white py-20">
+    <section id="project-success" className="bg-c3 py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-4">
+          <h2 className="text-5xl text-c1 text-center mb-8">
             Achieving Project Success Driven Through Performance, Improvement & Satisfaction Requires a Solid
           </h2>
-          <h3 className="text-2xl font-bold text-blue-600 text-center mb-16">
+          <h3 className="text-c1 text-2xl text-center mb-16">
             Change Management Engagement
           </h3>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {phases.map((phase, index) => (
               <div 
                 key={index} 
-                className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
+                className="border border-c6 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <h4 className="text-lg font-semibold text-blue-900">
+                  <h4 className="text-xl text-c1">
                     {phase.title}
                   </h4>
-                  <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
+                  <span className="inline-block bg-c1 text-c3 text-xs px-2 py-1 rounded-full">
                     {phase.badge}
                   </span>
                 </div>
@@ -69,8 +71,8 @@ const ProjectSuccessSection = () => {
                 <ul className="space-y-3">
                   {phase.points.map((point, i) => (
                     <li key={i} className="flex items-start text-sm">
-                      <span className="text-blue-500 mr-2">→</span>
-                      <span className="text-gray-600">{point}</span>
+                      <span className="text-c2 mr-2">→</span>
+                      <span className="text-c1">{point}</span>
                     </li>
                   ))}
                 </ul>
@@ -80,7 +82,9 @@ const ProjectSuccessSection = () => {
 
           {/* Optional CTA */}
           <div className="mt-12 text-center">
-            <button className="bg-blue-900 text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition-colors">
+            <button 
+             onClick={handleConsultationClick}
+            className="bg-c1 text-c3 px-8 py-3 rounded-lg hover:bg-c2 transition-colors">
               Start Your Project Success Journey
             </button>
           </div>

@@ -50,13 +50,13 @@ const StrategySection = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-20">
+    <section id="strategy" className="bg-c4 py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-blue-900 text-center mb-6">
+        <h2 className="text-5xl text-c3 mb-6">
           Strategy
         </h2>
         
-        <p className="text-gray-600 text-center max-w-4xl mx-auto mb-16">
+        <p className="text-c3 text-2xl mb-16">
           Through our Strategic services, we help you gauge the strategy, business adoption, project plan, or technical
           feasibility of your vision. We then help you break down the strategic vision into programs and projects, and
           plot a roadmap for how to navigate them.
@@ -66,30 +66,30 @@ const StrategySection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 hover:shadow-xl"
+              className="bg-c6 rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 hover:scale-105"
             >
               <div className="p-6">
-                <div className="inline-block bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full mb-4">
+                <div className="inline-block bg-c4 text-c3 text-xs px-3 py-1 rounded-full mb-4">
                   Strategic Service
                 </div>
                 
-                <h3 className="text-xl font-bold text-blue-900 mb-4">
+                <h3 className="text-2xl text-c3 mb-4">
                   {service.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-6">
+                <p className="text-c3 mb-6">
                   {service.description}
                 </p>
 
                 <div className="border-t pt-4">
-                  <h4 className="font-semibold text-blue-800 mb-3">
+                  <h4 className="font-semibold text-c2 mb-3">
                     Let's Talk If:
                   </h4>
                   <ul className="space-y-2">
                     {service.talkPoints.map((point, i) => (
                       <li key={i} className="flex items-start text-sm">
-                        <span className="text-blue-500 mr-2">→</span>
-                        <span className="text-gray-600">{point}</span>
+                        <span className="text-c2 mr-2">→</span>
+                        <span className="text-c3">{point}</span>
                       </li>
                     ))}
                   </ul>

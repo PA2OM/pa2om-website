@@ -9,7 +9,7 @@ import {
   Zap, 
   UtensilsCrossed,
   Microscope, 
-  Pickaxe 
+  Hammer
 } from 'lucide-react';
 
 const IndustryExperienceSection = () => {
@@ -17,60 +17,60 @@ const IndustryExperienceSection = () => {
     {
       icon: Factory,
       name: "MANUFACTURING",
-      color: "bg-orange-500"
+      color: "bg-c1"
     },
     {
       icon: Car,
       name: "AUTOMOTIVE",
-      color: "bg-red-600"
+      color: "bg-c2"
     },
     {
       icon: Plane,
       name: "AEROSPACE",
-      color: "bg-blue-400"
+      color: "bg-c4"
     },
     {
       icon: Cpu,
       name: "ELECTRONICS",
-      color: "bg-purple-500"
+      color: "bg-c5"
     },
     {
       icon: Landmark,
       name: "GOVERNMENT & DEFENSE",
-      color: "bg-green-600"
+      color: "bg-c8"
     },
     {
       icon: Beaker,
       name: "CHEMICALS",
-      color: "bg-black"
+      color: "bg-c13"
     },
     {
       icon: Zap,
       name: "ENERGY & UTILITIES",
-      color: "bg-green-700"
+      color: "bg-c11"
     },
     {
       icon: UtensilsCrossed,
       name: "FOOD BEVERAGE",
-      color: "bg-yellow-500"
+      color: "bg-purple-700"
     },
     {
       icon: Microscope,
       name: "LIFE SCIENCES",
-      color: "bg-blue-600"
+      color: "bg-blue-400"
     },
     {
-      icon: Pickaxe,
+      icon: Hammer,
       name: "METALS & MINING",
-      color: "bg-purple-700"
+      color: "bg-yellow-500"
     }
   ];
 
   return (
-    <section className="bg-gray-900 py-20">
+    <section id="industries" className="bg-gray-900 py-20 bg-c6 py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-white text-center mb-16">
-          INDUSTRY EXPERIENCE
+        <h2 className="text-5xl text-white text-center mb-16">
+          Our Industry Experience & Expertise
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
@@ -85,7 +85,7 @@ const IndustryExperienceSection = () => {
                   className: "text-white" 
                 })}
               </div>
-              <p className="text-white text-center font-medium text-sm">
+              <p className="text-white text-center text-lg">
                 {industry.name}
               </p>
             </div>

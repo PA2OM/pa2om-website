@@ -1,12 +1,15 @@
 import React from 'react';
 
 const PartnershipsSection = () => {
+  const handleConsultationClick = () => {
+    window.location.hash = 'contact';
+  };
   return (
-    <section className="relative">
+    <section id="partnerships" className="relative">
       {/* Hero Section with Image */}
       <div className="relative h-[600px] md:h-[500px] w-full">
         <img
-          src="/api/placeholder/1200/800"
+          src="/Pship1.svg"
           alt="Business partners meeting"
           className="w-full h-full object-cover"
         />
@@ -21,7 +24,7 @@ const PartnershipsSection = () => {
             <path
               d="M0,0 L100,0 L100,85 C75,95 50,90 25,85 L0,80 Z"
               fill="white"
-              className="opacity-90"
+              className="opacity-80"
             />
           </svg>
         </div>
@@ -30,10 +33,10 @@ const PartnershipsSection = () => {
         <div className="absolute inset-0 flex items-center">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl ml-auto">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                PARTNERSHIPS
+              <h2 className="text-4xl md:text-5xl text-c5 mb-6">
+                Partnerships
               </h2>
-              <div className="prose prose-lg text-gray-700">
+              <div className="prose prose-lg text-c5">
                 <p className="mb-4">
                   We recognize that strategic partnerships are key to rapid
                   scalability and long-term success, especially in the dynamic
@@ -43,7 +46,7 @@ const PartnershipsSection = () => {
                   As a growing business consulting and service delivery firm,
                   partnerships enable us to tap into a diverse pool of expertise,
                   resources, and capabilities, allowing us to deliver customized
-                  solutions across the entire value chain—from the manufacturing
+                  solutions across the entire value chain from the manufacturing
                   shop floor to your enterprise systems.
                 </p>
               </div>
@@ -55,7 +58,7 @@ const PartnershipsSection = () => {
       {/* Detailed Content Section */}
       <div className="bg-white py-20">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto text-c5">
             {/* Left Column */}
             <div className="space-y-8">
               <div className="prose prose-lg">
@@ -79,10 +82,10 @@ const PartnershipsSection = () => {
 
             {/* Right Column */}
             <div className="space-y-8">
-              <div className="prose prose-lg">
+              <div className="prose prose-lg text-c5">
                 <p>
                   Partnerships empower us to provide the broad spectrum of consulting
-                  services required to meet the demands of modern manufacturing—from
+                  services required to meet the demands of modern manufacturing from
                   technical innovation and process optimization to business transformation
                   and financial integration.
                 </p>
@@ -91,24 +94,10 @@ const PartnershipsSection = () => {
                   long-term sustainability for our clients in the manufacturing sector.
                 </p>
               </div>
-
-              <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              <button onClick={handleConsultationClick}
+              className="bg-c2 text-white px-8 py-3 rounded-lg hover:bg-c5 transition-colors">
                 Explore Partnership Opportunities
               </button>
-            </div>
-          </div>
-
-          {/* Optional Partner Logos Grid */}
-          <div className="mt-16">
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center opacity-70">
-              {[1, 2, 3, 4, 5, 6].map((index) => (
-                <div 
-                  key={index} 
-                  className="w-32 h-16 bg-gray-100 rounded flex items-center justify-center"
-                >
-                  <span className="text-gray-400">Partner Logo</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>

@@ -11,9 +11,9 @@ const TestimonialsSection = () => {
     },
     {
       name: "Mike D.",
-      location: "Austin, TX",
-      quote: "Working with PA2OM had been a game-changer for our company. Their expertise and dedication are unmatched",
-      industry: "Automotive"
+      location: "Salt Lake, UT",
+      quote: "Working with PA2OM had been a game-changer for our small company. Their expertise and dedication in defining a clear strategic vision has enabled us to increase our market penetration",
+      industry: "Heavy Industry"
     },
     {
       name: "Allison S.",
@@ -24,7 +24,7 @@ const TestimonialsSection = () => {
   ];
 
   const QuoteIcon = () => (
-    <div className="absolute -top-4 left-8 bg-blue-600 text-white p-2 rounded-full">
+    <div className="absolute -top-4 left-8 bg-c1 text-white p-2 rounded-full">
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path 
           strokeLinecap="round" 
@@ -37,13 +37,13 @@ const TestimonialsSection = () => {
   );
 
   return (
-    <section className="bg-gradient-to-b from-white to-gray-50 py-20">
+    <section id="testimonials" className="bg-gradient-to-b from-white to-gray-50 py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-5xl md:text-5xl text-c6 mb-4">
             Hear What Our Clients Have to Say
           </h2>
-          <p className="text-gray-600 text-lg">
+          <p className="text-c6 text-lg">
             Delivering measurable results through strategic transformation and execution
           </p>
         </div>
@@ -52,7 +52,7 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="relative bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
+              className="relative bg-c3 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
             >
               <QuoteIcon />
               
@@ -62,30 +62,24 @@ const TestimonialsSection = () => {
               </div>
 
               {/* Quote */}
-              <blockquote className="text-gray-700 mb-6">
+              <blockquote className="text-c6 mb-6">
                 "{testimonial.quote}"
               </blockquote>
 
               {/* Author Info */}
               <div className="mt-auto">
-                <div className="font-semibold text-gray-900">
+                <div className="font-semibold text-c6">
                   {testimonial.name}
                 </div>
-                <div className="text-gray-500 text-sm">
+                <div className="text-c6 text-sm">
                   {testimonial.location}
                 </div>
-                <div className="text-blue-600 text-sm mt-1">
+                <div className="text-c1 text-sm mt-1">
                   {testimonial.industry}
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-            Read More Reviews
-          </button>
         </div>
       </div>
     </section>

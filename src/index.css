@@ -1,3 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@font-face {
+    font-family: 'Suse';
+    src: url('/fonts/Suse.woff2') format('woff2'),
+         url('/fonts/Suse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  html {
+    font-family: 'Suse', sans-serif;
+  }
