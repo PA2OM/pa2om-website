@@ -67,7 +67,7 @@ const FounderSection = () => {
                 Through his comprehensive network of partners and collaborators from physical
                 product suppliers to consulting delivery services PA2OM brings together a
                 wealth of experience, amounting to hundreds of years of collective industry
-                insight. This enables the firm to deliver world-class consulting and
+                insight. This enables the firm to deliver world-class business advisory and
                 implementation services, ensuring measurable outcomes that directly impact
                 performance and financial success.
               </p>
@@ -77,11 +77,13 @@ const FounderSection = () => {
           {/* Right Image Column */}
           <div className="relative">
             <div className="relative z-10">
-              <img
-                src="/Profile Pic.svg"
-                alt="Manufacturing facility"
-                className="w-full rounded-lg shadow-xl"
-              />
+              <div className="max-w-md mx-auto"> {/* Added container with max width */}
+                <img
+                  src="/Profile Pic.svg"
+                  alt="Manufacturing facility"
+                  className="w-full rounded-lg shadow-xl"
+                />
+              </div>
 
               {/* Stats Overlay */}
               <div className="absolute -bottom-8 -left-8">

@@ -30,7 +30,7 @@ const StrategySection = () => {
       ]
     },
     {
-      title: "PMO Consulting & Development",
+      title: "PMO Business Advisory & Development",
       description: "A PMO can empower project managers while mitigating risks with right-sized governance. Yet many organizations still struggle to build or use them properly. Using PMI and PMO Global Alliance standards for assessment and development, we can get your PMO onto the right, value-added footing.",
       talkPoints: [
         "You struggle with project performance and consistency.",

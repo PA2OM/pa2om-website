@@ -23,7 +23,7 @@ const Navigation = () => {
         { title: 'Achieving Success', link: '#success' },
         { title: 'The PA2OM Difference', link: '#differences' },
         { title: 'Business Transformation', link: '#capabilities' },
-        { title: 'Consulting', link: '#consulting' },
+        { title: 'Business Advisory', link: '#consulting' },
         { title: 'Strategy', link: '#strategy' },
         { title: 'Change Management', link: '#project-success' }
       ]

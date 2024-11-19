@@ -58,11 +58,11 @@ const handleConsultationClick = () => {
     <section id="consulting" className="bg-gray-50 py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl text-c5 text-center mb-6">
-          Consulting
+          Business Advisory
         </h2>
 
         <p className="text-c5 text-2xl mb-16 text-center">
-          Our teams leverage industry consulting best practices that we delivery and adopt for your initiatives.
+          Our teams leverage industry business advsiory best practices that we delivery and adopt for your initiatives.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {pillars.map((pillar, index) => (

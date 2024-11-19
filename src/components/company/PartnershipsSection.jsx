@@ -43,7 +43,7 @@ const PartnershipsSection = () => {
                   and complex manufacturing industry.
                 </p>
                 <p>
-                  As a growing business consulting and service delivery firm,
+                  As a growing business advisory, service and delivery firm,
                   partnerships enable us to tap into a diverse pool of expertise,
                   resources, and capabilities, allowing us to deliver customized
                   solutions across the entire value chain from the manufacturing
@@ -84,7 +84,7 @@ const PartnershipsSection = () => {
             <div className="space-y-8">
               <div className="prose prose-lg text-c5">
                 <p>
-                  Partnerships empower us to provide the broad spectrum of consulting
+                  Partnerships empower us to provide the broad spectrum of cost effective advisory 
                   services required to meet the demands of modern manufacturing from
                   technical innovation and process optimization to business transformation
                   and financial integration.

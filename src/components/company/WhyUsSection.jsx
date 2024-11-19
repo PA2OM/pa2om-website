@@ -31,7 +31,7 @@ const WhyUsSection = () => {
           
           <div className="bg-white p-8 rounded-lg shadow-lg mb-12">
             <p className="text-2xl text-c1 mb-4">
-              PA2OM is a welcome resource alternative to hiring, traditional consulting, and staffing. 
+              PA2OM is a welcome resource alternative to hiring, traditional strategic business advisory, and staffing. 
             </p>
             <p className="text-2xl text-c1 mb-4">
               Our unique "TEAM" provides varied flexible skills and expertise.
